@@ -1,3 +1,7 @@
+
+
+
+
 # Deploy Next.js to GitHub Pages
 
 This is a Next.js template which can be deployed to GitHub Pages as a static site.
