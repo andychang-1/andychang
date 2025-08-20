@@ -1,47 +1,39 @@
-import React from "react";
-import './NavMenu.css'
 
+export type Tab = "info" | "cv" | "painting" | "drawing" | "print" | "projects";
 
-type Tab = "info" | "cv" | "painting" | "drawing" | "print" | "projects";
-
-interface NavMenuProps {
-    onTabSelect?: (tab: Tab) => void;
+export interface NavMenuProps {
+    setTab: (tab: Tab) => void;
 }
 
-export const NavMenu: React.FC<NavMenuProps> = ({ onTabSelect }) => {
-    const handleTabClick = (tab: Tab) => {
-        if (onTabSelect) {
-            onTabSelect(tab);
-        }
-    };
+export function NavMenu({ setTab }: NavMenuProps) {
 
     return (
-        <div id="nav-menu">
+        <div id="nav-menu" >
             <div>
                 <p id="font">Natalie Jacobs ✧</p>
             </div>
             <div className="nav-menu-inner">
-                <div className="nav-item" onClick={() => handleTabClick("info")}>
+                <div className="nav-item" onClick={() => setTab("info")}>
                     <span>
                         <u>info</u>
                     </span>
                 </div>
-                <div className="nav-item" onClick={() => handleTabClick("cv")}>
+                <div className="nav-item" onClick={() => setTab("cv")}>
                     <span>
                         <u>cv</u>
                     </span>
                 </div>
-                <div className="nav-item" onClick={() => handleTabClick("painting")}>
+                <div className="nav-item" onClick={() => setTab("painting")}>
                     <span>
                         ✧ <u>painting</u>
                     </span>
                 </div>
-                <div className="nav-item" onClick={() => handleTabClick("drawing")}>
+                <div className="nav-item" onClick={() => setTab("drawing")}>
                     <span id="drawing">
                         ✧ <u>drawing</u>
                     </span>
                 </div>
-                <div className="nav-item" onClick={() => handleTabClick("print")}>
+                <div className="nav-item" onClick={() => setTab("print")}>
                     <span>
                         ✧ <u>print</u>
                     </span>
@@ -53,7 +45,9 @@ export const NavMenu: React.FC<NavMenuProps> = ({ onTabSelect }) => {
                     </span>
                 </div>
                 */}
-                <div className="nav-section-header">CONTACT</div>
+                <div className="nav-section-header">
+                    <b>CONTACT</b>
+                </div>
                 <a href="mailto:natalie2jacobs2@gmail.com">
                     natalie2jacobs2@gmail.com
                 </a>
