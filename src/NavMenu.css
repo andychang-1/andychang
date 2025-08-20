@@ -29,7 +29,6 @@
     transform: scale(1.15);
 }
 
-
 @media only screen and (max-device-width: 500px) {
     #nav-menu {
         position: absolute;
