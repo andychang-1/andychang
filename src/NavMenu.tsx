@@ -1,3 +1,4 @@
+import "./NavMenu.css";
 
 export type Tab = "info" | "cv" | "painting" | "drawing" | "print" | "projects";
 

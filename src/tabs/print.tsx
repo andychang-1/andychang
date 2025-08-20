@@ -9,19 +9,19 @@
     <p class="names">Intaglio Print, 2024</p>
     <br /><br /><br />
 
-    <img class="drawh" src="assets/images/print/NJ STUDIO-10.jpg" />
+    <img class="content-wide" src="assets/images/print/NJ STUDIO-10.jpg" />
     <br />
     <p class="names"><i>Cueva</i></p>
     <p class="names">Intaglio Print, 2024</p>
     <br /><br /><br />
 
-    <img class="drawh" src="assets/images/print/NJ STUDIO-9.jpg" />
+    <img class="content-wide" src="assets/images/print/NJ STUDIO-9.jpg" />
     <br />
     <p class="names"><i>Demons</i></p>
     <p class="names">Intaglio Print, 2024</p>
     <br /><br /><br />
 
-    <img class="drawh" src="assets/images/print/NJ STUDIO-12 (1) copy.jpg" />
+    <img class="content-wide" src="assets/images/print/NJ STUDIO-12 (1) copy.jpg" />
     <br />
     <p class="names"><i>Is It Cold in the Water?</i></p>
     <p class="names">Intaglio Print, 2024</p>
@@ -33,7 +33,7 @@
     <p class="names"><i>These Devils In My Patterned Dreams</i></p>
     <p class="names">Intaglio Print, 2024</p>
     <br /><br /><br />
-    <img class="drawh" src="assets/images/print/NJ STUDIO-13 copy.jpg" />
+    <img class="content-wide" src="assets/images/print/NJ STUDIO-13 copy.jpg" />
     <br />
     <p class="names"><i>Karaoke</i></p>
     <p class="names">Intaglio Print, 2024</p>
@@ -64,19 +64,19 @@ export function Print() {
             src: "assets/images/print/NJ STUDIO-10.jpg",
             alt: "Cueva",
             title: "Cueva",
-            orientation: "drawh"
+            orientation: "content-wide"
         },
         {
             src: "assets/images/print/NJ STUDIO-9.jpg",
             alt: "Demons",
             title: "Demons",
-            orientation: "drawh"
+            orientation: "content-wide"
         },
         {
             src: "assets/images/print/NJ STUDIO-12 (1) copy.jpg",
             alt: "Is It Cold in the Water?",
             title: "Is It Cold in the Water?",
-            orientation: "drawh"
+            orientation: "content-wide"
         },
         {
             src: "assets/images/print/NJ STUDIO-12 copy.jpg",
@@ -88,7 +88,7 @@ export function Print() {
             src: "assets/images/print/NJ STUDIO-13 copy.jpg",
             alt: "Karaoke",
             title: "Karaoke",
-            orientation: "drawh"
+            orientation: "content-wide"
         },
         {
             src: "assets/images/print/NJ STUDIO-6 copy.jpg",

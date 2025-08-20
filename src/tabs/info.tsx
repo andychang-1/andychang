@@ -7,7 +7,7 @@ export function Info() {
                 University.
             </p>
             <p>
-                <img className="content-wide src=" assets /images/IMG_9168.JPG" alt="Natalie Jacobs artwork" />
+                <img className="content-wide" src="assets/images/IMG_9168.JPG" alt="Natalie Jacobs artwork" />
             </p>
             <p>
                 "Jacobs sees strange life in the spaces between apparent
