@@ -1,0 +1,23 @@
+.cv {
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* center left/right */
+    gap: 20px;
+    /* spacing between section, year, items container */
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* spacing between individual items */
+    align-items: center;
+    /* center individual items horizontally */
+}
+
+.item {}

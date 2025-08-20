@@ -21,10 +21,12 @@ export function App() {
         }
     }
 
+    const tabContentClass = tab === "cv" || tab === "info" ? "tabContent mobileBoxShadow" : "tabContent";
+
     return (
-        <>
+        <div className="root">
             <NavMenu setTab={handleTabClick} />
-            {tab != null && <div className={tab === "cv" || tab === "info" ? "tabContentWithMobileBoxShadow" : "tabContent"}>
+            {tab != null && <div className={tabContentClass}>
                 <Home setTab={handleTabClick} />
                 {tab == "cv" && <CV />}
                 {tab == "info" && <Info />}
@@ -34,6 +36,6 @@ export function App() {
                 {tab == "projects" && <Projects />}
             </div>}
 
-        </>
+        </div>
     )
 }
