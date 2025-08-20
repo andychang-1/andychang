@@ -10,7 +10,7 @@ import { Projects } from './tabs/projects.tsx';
 
 export type Tab = "info" | "cv" | "painting" | "drawing" | "print" | "projects";
 
-export default function App() {
+export function App() {
     const [tab, setTab] = useState<Tab | null>(null)
     const handleTabClick = (newTab: Tab | null) => {
         if (tab === newTab) {
@@ -24,13 +24,16 @@ export default function App() {
     return (
         <>
             <NavMenu setTab={handleTabClick} />
-            <Home setTab={handleTabClick} />
-            {tab == "cv" && <CV />}
-            {tab == "info" && <Info />}
-            {tab == "painting" && <Painting />}
-            {tab == "drawing" && <Drawing />}
-            {tab == "print" && <Print />}
-            {tab == "projects" && <Projects />}
+            {tab != null && <div className={tab === "cv" || tab === "info" ? "tabContentWithMobileBoxShadow" : "tabContent"}>
+                <Home setTab={handleTabClick} />
+                {tab == "cv" && <CV />}
+                {tab == "info" && <Info />}
+                {tab == "painting" && <Painting />}
+                {tab == "drawing" && <Drawing />}
+                {tab == "print" && <Print />}
+                {tab == "projects" && <Projects />}
+            </div>}
+
         </>
     )
 }

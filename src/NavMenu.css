@@ -28,8 +28,6 @@
     text-decoration-color: rgb(64, 14, 66);
 }
 
-
-
 @media only screen and (max-device-width: 500px) {
     #nav-menu {
         position: absolute;

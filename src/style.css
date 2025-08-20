@@ -23,12 +23,8 @@
   object-fit: contain;
 }
 
-#infoContent,
-#cvContent,
-#paintingContent,
-#drawingContent,
-#printContent,
-#projectsContent {
+.tabContent,
+.tabContentWithMobileBoxShadow {
   position: absolute;
   top: 2%;
   left: 35%;
@@ -47,8 +43,18 @@
 
 @media only screen and (max-device-width: 500px) {
 
-  #infoContent,
-  #cvContent {
+  .tabContent {
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    width: 82%;
+    height: 80%;
+    padding: 3%;
+    background-color: rgb(255, 255, 255);
+    overflow: scroll;
+  }
+
+  .tabContentWithMobileBoxShadow {
     position: absolute;
     top: 8%;
     left: 6%;
@@ -58,20 +64,6 @@
     background-color: rgb(255, 255, 255);
     overflow: scroll;
     box-shadow: 0px 0px 35px 35px rgb(244, 169, 153);
-  }
-
-  #paintingContent,
-  #drawingContent,
-  #printContent,
-  #projectsContent {
-    position: absolute;
-    top: 8%;
-    left: 6%;
-    width: 82%;
-    height: 80%;
-    padding: 3%;
-    background-color: rgb(255, 255, 255);
-    overflow: scroll;
   }
 
   .content-wide {
