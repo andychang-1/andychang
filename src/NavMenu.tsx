@@ -2,8 +2,8 @@ import type { Tab } from "./App";
 import "./NavMenu.css";
 
 export interface NavMenuProps {
-    tab: Tab | null; // props pass tab so that we can apply selective styling
     setTab: (tab: Tab) => void;
+    tab: Tab | null; // props pass tab so that we can apply selective styling
 }
 
 export function NavMenu({ setTab }: NavMenuProps) {

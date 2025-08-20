@@ -34,7 +34,6 @@ export function App() {
                 {tab == "print" && <Print />}
                 {/* {tab == "projects" && <Projects />} */}
             </div>}
-
         </div>
     )
 }

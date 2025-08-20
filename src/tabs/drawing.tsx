@@ -99,7 +99,7 @@ const drawings = [
 
 export function Drawing() {
     return (
-        <div id="drawingContent">
+        <div>
             {drawings.map((drawing, i) => (
                 <div key={i}>
                     <img className={drawing.className} src={drawing.src} />

@@ -105,7 +105,7 @@ export function Print() {
     ];
 
     return (
-        <div id="printContent">
+        <div >
             {prints.map((print, idx) => (
                 <div key={idx}>
                     <img className={print.orientation} src={print.src} alt={print.alt} />

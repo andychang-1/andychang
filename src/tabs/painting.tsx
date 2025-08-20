@@ -255,7 +255,7 @@ const paintings = [
 
 export function Painting() {
     return (
-        <div id="paintingContent">
+        <div>
             {paintings.map((painting, idx) => (
                 <div key={idx}>
                     <img className={painting.className} src={painting.src} alt={painting.title} />

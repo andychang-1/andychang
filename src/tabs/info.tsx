@@ -1,11 +1,11 @@
 export function Info() {
     return (
-        <div id="infoContent">
+        <div>
             <p>
-                Natalie Jacobs is a painter and printmaker. Her expertise is in oil, acrylic, and fresco painting, and
-                intaglio and relief printing. She lives and works in New York City and is an MFA student at Columbia
+                Natalie Jacobs is a painter and printmaker.Her expertise is in oil, acrylic, and fresco painting, and
+                intaglio and relief printing.She lives and works in New York City and is an MFA student at Columbia
                 University.
-            </p>
+            </p >
             <p>
                 <img className="content-wide" src="assets/images/IMG_9168.JPG" alt="Natalie Jacobs artwork" />
             </p>
