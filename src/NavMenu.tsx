@@ -6,7 +6,7 @@ export interface NavMenuProps {
     setTab: (tab: Tab) => void;
 }
 
-export function NavMenu({ tab, setTab }: NavMenuProps) {
+export function NavMenu({ setTab }: NavMenuProps) {
 
     const navItems = [
         { key: "info", label: <u>info</u> },
