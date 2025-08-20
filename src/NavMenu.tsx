@@ -2,58 +2,47 @@ import type { Tab } from "./App";
 import "./NavMenu.css";
 
 export interface NavMenuProps {
+    tab: Tab | null; // props pass tab so that we can apply selective styling
     setTab: (tab: Tab) => void;
 }
 
-export function NavMenu({ setTab }: NavMenuProps) {
+export function NavMenu({ tab, setTab }: NavMenuProps) {
+
+    const navItems = [
+        { key: "info", label: <u>info</u> },
+        { key: "cv", label: <u>cv</u> },
+        { key: "painting", label: <>✧ <u>painting</u></> },
+        { key: "drawing", label: <>✧ <u>drawing</u></> },
+        { key: "print", label: <>✧ <u>print</u></> },
+        // todo add projects
+    ];
+
+    const emailLink = <a href="mailto:natalie2jacobs2@gmail.com" className="nav-item">
+        natalie2jacobs2@gmail.com
+    </a>
+
+    const igLink = <a href="http://www.instagram.com/nattty.lite/" target="_blank" rel="noopener noreferrer" className="nav-item">
+        nattty.lite
+    </a>
 
     return (
         <div id="nav-menu" >
-            <div>
-                <p id="font">Natalie Jacobs ✧</p>
-            </div>
+            <p id="font">Natalie Jacobs ✧</p>
             <div className="nav-menu-inner">
-                <div className="nav-item" onClick={() => setTab("info")}>
-                    <span>
-                        <u>info</u>
-                    </span>
+                {navItems.map(item => (
+                    <div
+                        key={item.key}
+                        className="nav-item"
+                        onClick={() => setTab(item.key as Tab)}
+                    >
+                        {item.label}
+                    </div>
+                ))}
+                <div>
+                    CONTACT
                 </div>
-                <div className="nav-item" onClick={() => setTab("cv")}>
-                    <span>
-                        <u>cv</u>
-                    </span>
-                </div>
-                <div className="nav-item" onClick={() => setTab("painting")}>
-                    <span>
-                        ✧ <u>painting</u>
-                    </span>
-                </div>
-                <div className="nav-item" onClick={() => setTab("drawing")}>
-                    <span id="drawing">
-                        ✧ <u>drawing</u>
-                    </span>
-                </div>
-                <div className="nav-item" onClick={() => setTab("print")}>
-                    <span>
-                        ✧ <u>print</u>
-                    </span>
-                </div>
-                {/* Uncomment to enable projects tab
-                <div className="nav-item" onClick={() => handleTabClick("projects")}>
-                    <span>
-                        ✧ <u>projects</u>
-                    </span>
-                </div>
-                */}
-                <div className="nav-section-header">
-                    <b>CONTACT</b>
-                </div>
-                <a href="mailto:natalie2jacobs2@gmail.com">
-                    natalie2jacobs2@gmail.com
-                </a>
-                <a href="http://www.instagram.com/nattty.lite/" target="_blank" rel="noopener noreferrer">
-                    nattty.lite
-                </a>
+                {emailLink}
+                {igLink}
             </div>
         </div>
     );

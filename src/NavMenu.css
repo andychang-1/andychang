@@ -19,14 +19,16 @@
 .nav-item {
     /* shrink to content width */
     display: inline-block;
-    transition: 0.3s;
+    transition: 0.1s, transform 1s;
 }
 
 .nav-item:hover {
     color: rgb(72, 32, 110);
     text-decoration: underline;
     text-decoration-color: rgb(64, 14, 66);
+    transform: scale(1.15);
 }
+
 
 @media only screen and (max-device-width: 500px) {
     #nav-menu {

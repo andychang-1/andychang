@@ -24,7 +24,7 @@ export function App() {
 
     return (
         <div className="root">
-            <NavMenu setTab={handleTabClick} />
+            <NavMenu setTab={handleTabClick} tab={tab} />
             {tab != null && <div className={tabContentClass}>
                 <Home setTab={handleTabClick} />
                 {tab == "cv" && <CV />}
