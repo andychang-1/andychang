@@ -1,33 +1,6 @@
 import "./cv.css"
 
-
-/*
-.grid-item {
-    padding: 5px;
-    font-size: 15px;
-    text-align: center;
-}*/
-
 export function CV() {
-
-    const soloPresentations = <div className="container">
-        <div className="grid-item">SOLO PRESENTATIONS</div>
-        <div className="grid-item">✧ 2024</div>
-        <div className="items">
-            <span className="item">
-                <a href="https://utaartistspace.com/viewingrooms/herald-with-the-voice-of-longing/">
-                    <i>Herald with the Voice of Longing,</i>
-                </a>{" "}
-                UTA Artist's Space
-            </span>
-            <div className="item">Item 2</div>
-            <div className="item">Item 3</div>
-        </div>
-    </div>
-
-    return (<div className="cv">{soloPresentations}
-
-    </div>)
     return (
         <div>
             <div className="grid-item">SOLO PRESENTATIONS</div>
