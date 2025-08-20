@@ -33,7 +33,7 @@ export function App() {
                 {tab == "painting" && <Painting />}
                 {tab == "drawing" && <Drawing />}
                 {tab == "print" && <Print />}
-                {tab == "projects" && <Projects />}
+                {/* {tab == "projects" && <Projects />} */}
             </div>}
 
         </div>
