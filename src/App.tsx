@@ -6,10 +6,7 @@ import { Info } from './tabs/info.tsx';
 import { Painting } from './tabs/painting.tsx';
 import { Drawing } from './tabs/drawing.tsx';
 import { Print } from './tabs/print.tsx';
-
-export type Tab = "info" | "cv" | "painting" | "drawing" | "print" | "projects";
-
-
+import type { Tab } from './types.ts';
 
 export function App() {
     const [tab, setTab] = useState<Tab | null>(null)

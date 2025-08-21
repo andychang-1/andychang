@@ -1,5 +1,5 @@
-import type { Tab } from "./App";
 import "./NavMenu.css";
+import type { Tab } from "./types";
 
 export interface NavMenuProps {
     setTab: (tab: Tab) => void;

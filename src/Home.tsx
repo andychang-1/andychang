@@ -1,4 +1,5 @@
-import type { Tab } from "./App";
+import type { Tab } from './types.ts';
+
 import "./Home.css";
 
 
