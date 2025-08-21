@@ -102,7 +102,6 @@ const drawings: Array<Work> = [
 export function Drawing() {
     return (
         <div className="tabContentInner">
-            <div className="font160">drawing</div>
             {drawings.map((drawing, i) => (
                 <WorkComponent key={i} work={drawing} />
             ))}

@@ -2,7 +2,7 @@
     position: absolute;
     top: max(8vh, 32px);
     left: max(8vw, 32px);
-    z-index: 2147483647;
+    z-index: 999;
 }
 
 .nav-menu-inner {
@@ -35,7 +35,7 @@
 @media only screen and (max-device-width: 500px) {
     #nav-menu {
         position: absolute;
-        top: 5%;
+        top: max(8vh, 32px);
         left: 5%;
         padding: 3%;
         background-color: transparent;

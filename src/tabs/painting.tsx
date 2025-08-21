@@ -259,7 +259,6 @@ const paintings: Array<Work> = [
 export function Painting() {
     return (
         <div className="tabContentInner">
-            <div className="font160">painting</div>
             {paintings.map((painting, idx) => (
                 <WorkComponent key={idx} work={painting} />
             ))}

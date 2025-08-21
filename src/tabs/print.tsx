@@ -62,7 +62,6 @@ const prints: Array<Work> = [
 export function Print() {
     return (
         <div className="tabContentInner">
-            <div className="font160">print</div>
             {prints.map((print, idx) => (
                 <WorkComponent key={idx} work={print} />
             ))}
