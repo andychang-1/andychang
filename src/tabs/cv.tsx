@@ -3,7 +3,6 @@ import "./cv.css"
 export function CV() {
     return (
         <div className="tabContentInner">
-            <div className="font160">cv</div>
             <br />
             <div className="grid-item">SOLO PRESENTATIONS</div>
             <div className="grid-item" />

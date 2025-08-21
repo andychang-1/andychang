@@ -1,11 +1,12 @@
 .font200 {
   font-size: 200%;
+  width: 100%;
+  text-align: left;
 }
 
 .font160 {
   font-size: 160%;
 }
-
 
 .names {
   text-align: center;
@@ -36,11 +37,11 @@
 
 .tabContent {
   position: absolute;
+  padding-top: max(8vh, 32px);
   top: 0;
   right: 0;
   width: 60%;
-  height: 85vh;
-  padding-top: 12vh;
+  height: 88vh;
   padding-bottom: 3vh;
   padding-left: 3%;
   padding-right: 3%;
