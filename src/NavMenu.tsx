@@ -28,6 +28,7 @@ export function NavMenu({ setTab }: NavMenuProps) {
     return (
         <div id="nav-menu" >
             <div className="font200">Natalie Jacobs ✧</div>
+            <hr style={{ border: "none", borderTop: "2px solid black", margin: "16px 0" }} />
             <div className="nav-menu-inner">
                 {navItems.map(item => (
                     <div

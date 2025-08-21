@@ -1,12 +1,7 @@
 #nav-menu {
     position: absolute;
-    top: 8vh;
-    left: 8vw;
-    padding: 3%;
-    background-color: white;
-    font-size: 100%;
-    background-color: rgba(255, 255, 255, .8);
-    box-shadow: 0px 0px 35px 35px rgb(219, 200, 175);
+    top: max(8vh, 32px);
+    left: max(8vw, 32px);
 }
 
 .nav-menu-inner {
@@ -39,7 +34,7 @@
 @media only screen and (max-device-width: 500px) {
     #nav-menu {
         position: absolute;
-        top: 5%;
+        top: max(8vh, 32px);
         left: 5%;
         padding: 3%;
         background-color: transparent;
