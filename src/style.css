@@ -40,10 +40,10 @@
   padding-top: max(8vh, 32px);
   top: 0;
   right: 0;
-  width: 60%;
+  width: 100vh;
   height: 88vh;
   padding-bottom: 3vh;
-  padding-left: 3%;
+  padding-left: 40%;
   padding-right: 3%;
   overflow-y: auto;
   overflow-x: hidden;
