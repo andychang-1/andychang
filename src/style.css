@@ -1,10 +1,11 @@
-.root {
-  margin: 8px
-}
-
-#font {
+.font200 {
   font-size: 200%;
 }
+
+.font160 {
+  font-size: 160%;
+}
+
 
 .names {
   text-align: center;
@@ -13,7 +14,7 @@
 /* Base horizontal (full width/height, preserve aspect) */
 .content-wide {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
   /* Optional: max size = screen size */
   max-width: 100vw;
@@ -25,8 +26,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  height: 100%;
+  width: 60%;
+  height: auto;
   object-fit: contain;
   /* Optional: max size = screen size */
   max-width: 100vw;
@@ -38,8 +39,8 @@
   top: 0;
   right: 0;
   width: 60%;
-  height: 94vh;
-  padding-top: 3vh;
+  height: 85vh;
+  padding-top: 12vh;
   padding-bottom: 3vh;
   padding-left: 3%;
   padding-right: 3%;
@@ -48,6 +49,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.tabContentInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  /* adds spacing between items */
 }
 
 

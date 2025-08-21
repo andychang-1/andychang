@@ -1,6 +1,7 @@
 export function Info() {
     return (
-        <div>
+        <div className="tabContentInner">
+            <div className="font160">info</div>
             <p>
                 Natalie Jacobs is a painter and printmaker.Her expertise is in oil, acrylic, and fresco painting, and
                 intaglio and relief printing.She lives and works in New York City and is an MFA student at Columbia

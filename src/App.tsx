@@ -9,6 +9,8 @@ import { Print } from './tabs/print.tsx';
 
 export type Tab = "info" | "cv" | "painting" | "drawing" | "print" | "projects";
 
+
+
 export function App() {
     const [tab, setTab] = useState<Tab | null>(null)
     const handleTabClick = (newTab: Tab | null) => {

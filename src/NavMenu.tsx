@@ -27,7 +27,7 @@ export function NavMenu({ setTab }: NavMenuProps) {
 
     return (
         <div id="nav-menu" >
-            <p id="font">Natalie Jacobs ✧</p>
+            <div className="font200">Natalie Jacobs ✧</div>
             <div className="nav-menu-inner">
                 {navItems.map(item => (
                     <div
