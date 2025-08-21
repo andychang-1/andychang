@@ -19,32 +19,37 @@ export function NavMenu({ setTab }: NavMenuProps) {
 
     const emailLink = <a href="mailto:natalie2jacobs2@gmail.com" className="nav-item">
         natalie2jacobs2@gmail.com
-    </a>
+    </a>;
 
     const igLink = <a href="http://www.instagram.com/nattty.lite/" target="_blank" rel="noopener noreferrer" className="nav-item">
         nattty.lite
-    </a>
+    </a>;
 
     return (
         <div id="nav-menu" >
-            <div className="font200">Natalie Jacobs ✧</div>
-            <hr style={{ border: "none", borderTop: "2px solid black", margin: "16px 0" }} />
-            <div className="nav-menu-inner">
-                {navItems.map(item => (
-                    <div
-                        key={item.key}
-                        className="nav-item"
-                        onClick={() => setTab(item.key as Tab)}
-                    >
-                        {item.label}
-                    </div>
-                ))}
-                <div>
-                    CONTACT
+            <div className="nav-title">Natalie Jacobs ✧</div>
+            <hr className="nav-divider" />
+            <div className="nav-section">
+                <div className="nav-menu-inner">
+                    {navItems.map(item => (
+                        <div
+                            key={item.key}
+                            className="nav-item"
+                            onClick={() => setTab(item.key as Tab)}
+                        >
+                            {item.label}
+                        </div>
+                    ))}
                 </div>
-                {emailLink}
-                {igLink}
+            </div>
+            <div className="nav-section">
+                <div className="nav-section-header">CONTACT</div>
+                <hr className="nav-divider" />
+                <div className="nav-menu-inner">
+                    {emailLink}
+                    {igLink}
+                </div>
             </div>
         </div>
     );
-};
+}
