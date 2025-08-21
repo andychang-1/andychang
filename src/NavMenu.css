@@ -3,13 +3,11 @@
     top: max(8vh, 32px);
     left: max(8vw, 32px);
     z-index: 999;
-    padding: 32px 24px 24px 24px;
     min-width: 260px;
 }
 
 .nav-title {
     font-size: 200%;
-    margin-bottom: 4px;
 }
 
 .nav-divider {

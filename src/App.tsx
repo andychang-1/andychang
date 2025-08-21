@@ -30,7 +30,7 @@ export function App() {
             {tab != null && <div className={tabContentClass}>
                 <Home setTab={handleTabClick} />
                 <div className="font200">{tab}</div>
-                <hr style={{ width: "100%", border: "none", borderTop: "2px solid black", margin: "16px 0" }} />
+                <hr className="nav-divider" />
                 {tab == "cv" && <CV />}
                 {tab == "info" && <Info />}
                 {tab == "painting" && <Painting />}
